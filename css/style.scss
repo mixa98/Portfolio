@@ -1,0 +1,760 @@
+$orange: #fd7014;
+$white: #eeeeee;
+$grey: #77777b;
+$dark: #303030;
+
+@mixin footerdiv {
+    width: 30%;
+    height: 50px;
+}
+
+@font-face {
+	src: url("aleo.ttf");
+	font: {
+        family: "aleo";
+    }
+}
+*{
+    margin: 0;
+    padding: 0;
+    font: {
+        family: "aleo";
+    }
+}
+
+header{
+    width: 100%;
+    min-height: 600px;
+}
+
+#container{
+    width: 100%;
+    min-height: 650px;
+    background: {
+        image: url('../img/header.jpg');
+        size: cover;
+        position: center;
+        repeat: no-repeat;
+        attachment: fixed;
+    } 
+    position: absolute;  
+}
+
+#logonav{
+    width: 100%;
+    min-height: 80px;
+    background: {
+        color: $white;
+    }
+    display: flex;
+    justify: {
+        content: space-around;
+    }
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+#logo{
+    font: {
+        size: 30px;
+        weight: bold;
+    }
+    color: $grey;
+    width: 20%;
+    text-align: center;
+    padding-top: 5px;
+    span{
+        color: $orange;
+    }
+
+}
+
+nav{
+    ul{
+        list-style-type: none;
+    }
+    li{
+        display: inline-block;
+    }
+    a{
+        text: {
+            decoration: none;
+        
+        }
+        color: $grey;
+        margin-left: 25px;
+        border: {
+            radius: 15px;
+        }
+        &:hover{
+            background: {
+                color: $orange;
+            }
+            color: white;
+        }
+        padding: 10px;
+    }
+    font: {
+        size: 20px;
+        weight: bold;
+    }
+    width: 55%;
+    text-align: left;
+    padding-top: 30px;
+}
+
+#home{
+    width: 37%;
+    height: 300px;
+    position: relative;
+    top: 180px;
+    left: 53%;
+    h2{
+        color: $white;
+        font: {
+            size: 35px;
+        }
+        margin: {
+            bottom: 15px;
+        }
+        font: {
+            weight: bold;
+        }
+    }
+    h3{
+        color: $white;
+        font: {
+            size: 30px;
+        }
+        margin: {
+            bottom: 15px;
+        }
+    }
+    span{
+        color: $orange;
+    }
+    p{
+        color: $white;
+        font: {
+            weight: bold;
+            size: 20px;
+        }
+        border: {
+            bottom: 3px solid $orange;
+        }
+        padding: {
+            bottom: 10px;
+        }
+    }
+}    
+
+
+#about{
+    width: 100%;
+    height: 600px;
+    padding: {
+        top: 120px;
+    }
+    text: {
+        align: center;
+    }
+    background: {
+        color: $dark;
+    }
+    border: {
+        top: 1px solid $grey;
+    }
+    
+}
+
+.sectionttl{
+    color: $grey;
+    font: {
+        size: 40px;
+        weight: bold;
+    }
+    span{
+        color: $orange;
+    }
+}
+
+#imgtxt{
+    width: 90%;
+    height: 410px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    padding: {
+        top: 50px;
+    }
+}
+
+#myimg{
+    width: 30%;
+    height: 400px;
+    background: {
+        image: url('../img/autor.png');
+        position: center;
+    }
+    border: {
+        radius: 30%;
+    }
+
+}
+
+#abouttxt{
+    width: 60%;
+    height: 400px;
+    padding: {
+        top: 20px;
+    }
+    p{
+        font: {
+            size: 33px;
+        }
+        text: {
+            align: left;
+        }
+        color: $orange;
+    }
+}
+
+#skills{
+    width: 100%;
+    height: 863px;
+    padding: {
+        top: 100px;
+    }
+    text: {
+        align: center;
+    }
+    background: {
+        color: $white;
+    }
+}
+
+.allskills{
+    width: 90%;
+    height: 700px;
+    margin: 0 auto;
+    margin: {
+        top: 40px;
+    }
+    padding: {
+        top: 80px;
+    }
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background: {
+        color: $white;
+    }
+}
+
+.skill{
+    width: 30%;
+    height: 280px;
+    color: $grey;
+    font: {
+        size: 35px;
+    }
+}
+
+.icon{
+    width: 100%;
+    height: 200px;
+    border: {
+        bottom: 2px solid $orange;
+    }
+    margin: {
+        bottom: 10px;
+    }
+    i{
+        font: {
+            size: 160px;
+        }
+        color: $grey;
+    }
+}
+
+#cover{
+    width: 100%;
+    height: 600px;
+    background: {
+        color: $white;
+    }
+}
+
+#projects{
+    width: 100%;
+    height: 600px;
+    padding: {
+        top: 100px;
+    }
+    text: {
+        align: center;
+    }
+    background: {
+        color: $dark;
+    }
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
+}
+
+.allprojects{
+    width: 90%;
+    height: 440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: {
+        top: 100px;
+    }
+}
+
+#site1{
+    background: {
+        image: url(../img/site1.png);
+        size: cover;
+    }
+}
+
+#site2{
+    background: {
+        image: url(../img/site2.png);
+        size: cover;
+    }
+}
+
+#site3{
+    background: {
+        image: url(../img/site3.png);
+        size: cover;
+    }
+}
+
+.site{
+    width: 30%;
+    height: 270px;
+}
+
+#facts{
+    width: 100%;
+    height: 300px;
+    background-color: $white;
+    text: {
+        align: center;
+    }
+    padding: {
+        top: 130px;
+    }
+}
+
+#allfact{
+    width: 90%;
+    height: 250px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.fact{
+    padding: {
+        top: 80px;
+    }
+    text: {
+        align: center;
+    }
+    h5{
+        color: $orange;
+        margin: {
+            bottom: 20px;
+        }
+        font: {
+            size: 40px;
+        }
+    }
+    p{
+        color: $grey;
+        font: {
+            size: 30px;
+            weight: bold;
+        }
+    }
+}
+
+#contact{
+    width: 100%;
+    height: 450px;
+    padding: {
+        top: 80px;
+    }
+    text: {
+        align: center;
+    }
+    background: {
+        image: url('../img/contact.jpg');
+        size: cover;
+        repeat: no-repeat;
+        position: center;
+        attachment: fixed;
+    }
+}
+
+#contactc{
+    width: 90%;
+    height: 300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+#contactl{
+    width: 45%;
+    height: 250px;
+    input{
+        width: 90%;
+        background: none;
+        border: none;
+        color: $orange;
+        letter: {
+            spacing: 2px;
+        }
+        font: {
+            size: 15px;
+            weight: bold;
+        }
+        border: {
+            bottom: 2px solid $orange;
+        }
+        padding: 10px;
+        margin: {
+            top: 30px;
+        }
+        &::placeholder {
+            color: $orange;
+            letter: {
+                spacing: 2px;
+            }
+            font: {
+                size: 15px;
+                weight: bold;
+            }
+        }
+    }
+
+}
+
+#contactr{
+    width: 45%;
+    height: 250px;
+    textarea{
+        width: 90%;
+        margin-top: 40px;
+        color: $orange;
+        font: {
+            size: 15px;
+            weight: bold;
+        }
+        padding: {
+            bottom: 200px;
+        }
+        border: none;
+        background: none;
+        border: {
+            bottom: 2px solid $orange;
+        }
+        &::placeholder {
+            color: $orange;
+            letter: {
+                spacing: 2px;
+            }
+            font: {
+                size: 15px;
+                weight: bold;
+            }
+        }
+    }
+}
+
+#send{
+    padding: {
+        top: 25px;
+    }
+    button{
+        width: 150px;
+        padding: 10px;
+        background: none;
+        border: 2px solid $orange;
+        color: $orange;
+        font: {
+            size: 15px;
+            weight: bold;
+        }
+    }
+}
+
+footer{
+    width: 100%;
+    height: 80px;
+    padding: {
+        top: 10px;
+    }
+    background: {
+        color: $white;
+    }
+}
+
+#footerall{
+    width: 90%;
+    height: 70px;
+    margin: 0 auto;
+    text: {
+        align: center;
+    }
+    display: flex;
+    justify-content: space-around;
+}
+
+#copyright{
+    @include footerdiv;
+    color: $grey;
+    padding: {
+        top: 25px;
+    }
+    p{
+        font: {
+            weight: bold;
+        }
+    }
+}
+
+#footerlogo{
+    @include footerdiv;
+    h6{
+        color: $grey;
+        font: {
+            size: 45px;
+        }
+    }
+    padding: {
+        top: 10px;
+    }
+    span{
+        color: $orange;
+    font: {
+        size: 45px;
+    }
+    }
+}
+
+#files{
+    @include footerdiv;
+    padding: {
+        top: 20px;
+    }
+    a{
+        font: {
+            size: 25px;
+        }
+        color: $grey;
+        text: {
+            decoration: none;
+        }
+    }
+}
+
+@media only screen and ( max-width: 1161px){
+    #logonav{
+        display: flex;
+        justify-content: space-between;
+    }
+    #logo{
+        width: 20%;
+        text-align: left;
+    }
+    nav{
+        margin-right: 10%;
+        width: 70%;
+    }
+    #abouttxt{
+        p{
+            font: {
+                size: 30px;
+            }
+        }
+    }
+
+}
+
+@media only screen and ( max-width: 1000px){
+    #abouttxt{
+        p{
+            font: {
+                size: 28px;
+            }
+        }
+    }
+}
+
+@media only screen and ( max-width: 914px){
+    #logo{
+        display: none;
+    }
+    nav{
+        width: 100%;
+        margin: 0 auto;
+        ul{
+            text: {
+                align: center;
+            }
+        }
+    }
+    
+}
+
+@media only screen and ( max-width: 805px){
+    #abouttxt{
+        p{
+            font: {
+                size: 23px;
+            }
+        }
+    }
+    #myimg{
+        height: 350px;
+    }
+    .icon{
+        i{
+            font: {
+                size: 120px;
+            }
+        }
+        padding: {
+            bottom: 0px;
+        }
+        
+    }
+    h5{
+        font: {
+            size: 25px;
+        }
+    }
+}
+
+@media only screen and ( max-width: 637px){
+    nav{
+        height: 170px;
+        font-size: 17px;
+    }
+    ul{
+        display: flex !important;
+        flex-direction: column !important;
+    }
+    li{
+        margin-top: 10px;
+    }
+    #container{
+        position: absolute;
+    }
+    #home{
+        width: 60%;
+        position: relative;
+        left: 25%;
+        top: 300px;
+    }
+    #imgtxt{
+        display: block !important;
+        flex-direction: column !important;
+    }
+    #about{
+        height: 850px;
+    }
+    #myimg{
+        margin: 0 auto;
+        width: 300px;
+    }
+    #abouttxt{
+        margin: 0 auto;
+        p{
+            font-size: 20px;
+        }
+    }
+    #allskills{
+        display: block !important;
+        flex-direction: column !important;
+    }
+    .skill{
+        width: 45%;
+    }
+    #skills{
+        height: 1050px;
+    }
+    .allprojects{
+        display: block !important;
+        flex-direction: column !important;
+        
+    }
+    #projects{
+        height: 1180px;
+        padding-top: 150px;
+    }
+    #cover{
+        height: 1380px;
+    }
+    .site{
+        margin: 0 auto;
+        margin-bottom: 20px;
+        width: 300px;
+    }
+   #facts{
+       padding-top: 0px;
+   }
+   #contactc{
+    display: block !important;
+    flex-direction: column !important;
+   }
+   #contact{
+       height: 720px;
+   }
+   #contactl{
+       width: 80%;
+       margin: 0 auto;
+   }
+   #contactr{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 70px;
+    }
+    #send{
+        margin-top: 290px;
+    }
+    #footerall{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    #copyright{
+        width: 40%;
+        p{
+            font-size: 15px;
+        }
+    }
+}
+@media only screen and ( max-width: 400px){
+    #abouttxt{
+        p{
+            font-size: 17px;
+        }
+    }
+    .fact{
+        h5{
+            font-size: 25px;
+        }
+        p{
+            font-size: 20px;
+        }
+    }
+}
